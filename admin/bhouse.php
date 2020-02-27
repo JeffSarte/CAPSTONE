@@ -14,7 +14,7 @@
         <h2>admin</h2>
         <ul>
         <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Dashboard</a></li>
-            <li><a href="boaders.php"><i class="fas fa-address-card"></i>&nbsp;Boarders</a></li>
+            <li><a href="boarder.php"><i class="fas fa-address-card"></i>&nbsp;Boarders</a></li>
             <li><a href="accreditor.php"><i class="fas fa-project-diagram"></i>&nbsp;Accreditors</a></li>
             <li><a href="bhouse.php"><i class="fas fa-blog"></i>Bhouse</a></li>
             <li><a href="report.php"><i class="fas fa-address-book"></i>Report</a></li>

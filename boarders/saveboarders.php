@@ -18,10 +18,9 @@
     
 
     
-    $query = "INSERT into boarder (FirstName , MiddleName, LastName, Age,School,  Status,
-      UserName, Password,Gender, Number, Email)  values ('$fname', '$mname', '$lname', 
-            '$age', '$school' ,'$status',  '$username', '$password',''$gender' '$number' ,'$email'
-    );";
+    $query = "INSERT into boarder (FirstName , MiddleName, LastName , Age,School,  Status ,
+    UserName, Password, Gender,Number,Email)  values ('$fname', '$mname', '$lname' , 
+    '$age', '$school' ,'$status' ,  '$username', '$password','$gender','$number','$email');";
 
        mysqli_query($conn,$query);
  
