@@ -24,7 +24,15 @@
     </div>  
     <div class="main_content">
         <div class="header">
-       
+
+        <form action="" method="POST">
+
+            <input type="text" name="id" placeholder="Search By Name">
+                <div class="button">
+                    <button type="submit" name="search"> Search</button>
+                </div>
+
+            </form>
         <h1>Admin</h1>
         </div>  
         <div class="info">
@@ -46,6 +54,7 @@
         <th scope="col">Email</th>   
         <th scope="col">Action</th>  
         </tr>
+       
         <?php  include 'getboarder.php';?>
     </thead>
     </table>

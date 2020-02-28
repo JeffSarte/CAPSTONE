@@ -61,7 +61,7 @@
 <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                   <h5 class="modal-title">Add BoardingHouse Owner</h5>
+                   <h5 class="modal-title">Add Accreditors</h5>
                   <button class="close" type="button" @Click="close = true">
                   <span aria-hidden="true"> &times</span>
                   </button>
