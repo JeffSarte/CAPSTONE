@@ -1,3 +1,5 @@
+
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,11 +33,40 @@
           <div class="card" style="width: 15rem;">
             <div class="card-body">
                 <h5 class="card-title">Boarders</h5>
+
+                <?php 
                 
-                
+                    include '../include/conn.php';
+
+                    $result=mysqli_query($conn,"Select * from boarder");
+                    $totalboarder = mysqli_num_rows($result);
+
+                    ?>
+
+            <h5 class="card-title"><?php echo $totalboarder; ?></h5>
             </div>
             </div>
 
+          
+
+          <div class="card" style="width: 15rem;">
+            <div class="card-body">
+                <h5 class="card-title">Accreditors</h5>
+
+                <?php 
+                
+                    include '../include/conn.php';
+
+                    $result=mysqli_query($conn,"Select * from accreditor");
+                    $totalaccreditor = mysqli_num_rows($result);
+
+                    ?>
+
+            <h5 class="card-title"><?php echo $totalaccreditor; ?></h5>
+            </div>
+            </div>
+
+          </div>
           </div>
         
         <div class="boarders">
@@ -43,7 +74,16 @@
          <div class="card" style="width: 15rem;">
             <div class="card-body">
                 <h5 class="card-title">Boarding House</h5>
-               
+                <?php 
+                
+                include '../include/conn.php';
+
+                $result=mysqli_query($conn,"Select * from boardinghouse");
+                $totalboardinghouse = mysqli_num_rows($result);
+
+                ?>
+
+<h5 class="card-title"><?php echo $totalboardinghouse; ?></h5>
             </div>
             </div>
         

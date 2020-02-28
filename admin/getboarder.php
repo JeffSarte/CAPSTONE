@@ -4,7 +4,7 @@
 
     $get_query = "SELECT * FROM boarder ";
     $result = mysqli_query($conn,$get_query);
-   
+    
      while($row = mysqli_fetch_array($result))
     {
         ?>
