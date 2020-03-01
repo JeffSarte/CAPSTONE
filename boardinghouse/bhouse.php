@@ -68,9 +68,14 @@
                   </button>
                 </div>
                     <div class="modal-body p-4">
-                        <form action="savebhouse.php" method="POST">
+                        <form action="savebhouse.php" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                              <input type="text" name="name" class="form-control form-control-lg" 
+                             placeholder="Name">
+                            </div>
+
+                            <div class="form-group">
+                             <input type="file" name="image" class="form-control form-control-lg" 
                              placeholder="Name">
                             </div>
                             <div class="form-group">
