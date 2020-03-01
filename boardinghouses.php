@@ -33,16 +33,16 @@
             <a class="nav-link" href="Index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.php">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="boardinghouses.html.">Boarding Houses</a>
+            <a class="nav-link" href="boardinghouses.php">Boarding Houses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.php">Contact</a>
           </li>    
           <li class="nav-item dropdown">
-            <a class="nav-link" href="">Log In</a>
+            <a class="nav-link" href="boarders">Log In</a>
             </a>
             </div>
           </li>

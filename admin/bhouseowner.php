@@ -1,3 +1,10 @@
+
+
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,22 +18,22 @@
 
 <div class="wrapper">
     <div class="sidebar">
-        <h2>Admin</h2>
+    <h2>Welcome <?php echo $_SESSION["username"]; ?></h2>
         <ul>
-            <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Dashboard</a></li>
+        <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Dashboard</a></li>
             <li><a href="boarder.php"><i class="fas fa-address-card"></i>&nbsp;Boarders</a></li>
             <li><a href="accreditor.php"><i class="fas fa-project-diagram"></i>&nbsp;Accreditors</a></li>
-            <li><a href="bhouse.php"><i class="fas fa-blog"></i>Bhouse</a></li>
-            <li><a href="bhouseowner.php"><i class="fas fa-blog"></i>Bhouse Owner</a></li>
+            <li><a href="bhouse.php"><i class="fas fa-blog"></i>Boarding House</a></li>
+            <li><a href="bhouseowner.php"><i class="fas fa-blog"></i>Owner</a></li>
             <li><a href="report.php"><i class="fas fa-address-book"></i>Report</a></li>
-            <li><a href="#"><i class="fas fa-map-pin"></i>Logout</a></li>
+            <li><a href="logout.php"><i class="fas fa-map-pin"></i>Logout</a></li>
         </ul> 
        
     </div>
     <div class="main_content">
         <div class="header">
        
-        <h1>Bhouse Owner</h1>
+        <h1>Boarding House Owner</h1>
         </div>  
         <div class="info">
           
@@ -37,12 +44,15 @@
     
         <tr>     
         <th scope="col">Name</th>
-        <th scope="col">School</th>
+        <th scope="col">Age</th>
+        <th scope="col">Gender</th>   
+        <th scope="col">Number</th>   
         <th scope="col">UserName</th>   
         <th scope="col">Password</th>   
         <th scope="col">Action</th>        
         </tr>
-        <?php  include 'getaccreditor.php';?>
+
+        <?php  include 'getbhouseowner.php';?>
     </thead>
     </table>
 
@@ -91,7 +101,17 @@
                            
                             <div class="form-group">
                                 <input type="text" name="gender" class="form-control form-control-lg" 
-                                placeholder="gender">
+                                placeholder="Gender">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="number" class="form-control form-control-lg" 
+                                placeholder="Number">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="email" class="form-control form-control-lg" 
+                                placeholder="Email">
                             </div>
 
                             <div class="form-group">
@@ -104,10 +124,7 @@
                                 placeholder="Password">
                             </div>
 
-                            <div class="form-group">
-                                <input type="text" name="number" class="form-control form-control-lg" 
-                                placeholder="number">
-                            </div>
+                            
                             
                             <div class="form-group">
                                 <button class="btn btn-info btn-block btn-lg">Add Bhouse Owner</button>

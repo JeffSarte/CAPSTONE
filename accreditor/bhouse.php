@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,20 +19,20 @@
 
 <div class="wrapper">
     <div class="sidebar">
-        <h2>Accreditor</h2>
+    <h2>Welcome <?php echo $_SESSION["UserName"]; ?></h2>
         <ul>
         <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Home</a></li>
            
             <li><a href="accreditor.php"><i class="fas fa-project-diagram"></i>&nbsp;Accredited Bhouse</a></li>
-            <li><a href="bhouse.php"><i class="fas fa-blog"></i>Bhouse</a></li>
-            <li><a href="#"><i class="fas fa-map-pin"></i>Logout</a></li>
+            <li><a href="bhouse.php"><i class="fas fa-blog"></i>Boarding House</a></li>
+            <li><a href="logout.php"><i class="fas fa-map-pin"></i>Logout</a></li>
         </ul> 
        
     </div>
     <div class="main_content">
         <div class="header">
 
-       <h1>List of Accredted Boarding House In Naga City</h1>
+       <h1> List Of  Boarding House in Naga City </h1>
        
         </div>  
         <div class="info">
@@ -39,6 +47,7 @@
         <tr>     
         <th scope="col">Name</th>
         <th scope="col">Address</th>
+        <th scope="col">Number</th>
         <th scope="col">Action</th>        
         </tr>
     <?php  include 'getbhouse.php';?>

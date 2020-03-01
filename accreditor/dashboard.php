@@ -29,40 +29,6 @@
         </ul> 
        
     </div>
-    <div class="main_content">
-        <div class="header">
-       
-       <h1>Accredited Boarding House</h1>
-        </div>  
-        <div class="info">
-    <div class="listbhouse">
-        
-    <table class="table table-bordered">   
-    <thead class="thead-dark">
-    
-        <tr>     
-        <th scope="col">BoardingHouse</th>
-        <th scope="col">Address</th>  
-        <th scope="col">Number</th>  
-        <th scope="col">Action</th>  
-              
-        </tr>
-    <?php  include 'getbhouse.php';?>
-    </thead>
-    </table>
-    </div>
-    </tr>
-  </thead>
-  
-  
-</table>  
-
-
-
-
-        </div>
-    </div>
-</div>
 
 
     

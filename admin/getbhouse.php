@@ -5,9 +5,8 @@
 include '../include/conn.php';
 
 
-
-    $query = "SELECT * FROM boardinghouse";
-
+  
+    $query = "SELECT * FROM `boardinghouse` ";
 
     $result = mysqli_query($conn,$query);
 
@@ -18,9 +17,11 @@ include '../include/conn.php';
             <tbody>
                 <tr>
                 
-                    <td><?php echo $row['Name']; ?></td> 
+                <td><?php echo $row['Name']; ?></td> 
                     <td><?php echo $row['Address']; ?></td>
+                    
                     <td><?php echo $row['Number']; ?></td>
+                    <td><?php echo $row['Rent']; ?></td>
                     
                     <td>
 
@@ -28,8 +29,8 @@ include '../include/conn.php';
                     
                                         <button type="submit" class="btn btn-danger" name="id" value="<?php echo $row['id']; ?>" >View Details </button>
                                     </form>
+                                    <button type="submit" class="btn btn-danger" name="id" value="<?php echo $row['id']; ?>" >Edit </button>
                      </td>
-                </tr>
             </tbody>
             
         <?php     

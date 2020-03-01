@@ -13,9 +13,11 @@
         ?>
             <tbody>
                 <tr>
-                
-                    <td><?php echo $row['FirstName'] .' '.$row['MiddleName']. ' '.$row['LastName']; ?></td> 
+                    
                     <td><?php echo $row['School']; ?></td>
+                    <td><?php echo $row['email'] ; ?></td> 
+                    <td><?php echo $row['number'] ; ?></td> 
+                    
                     <td><?php echo $row['UserName']; ?></td>
                     <td><?php echo $row['Password']; ?></td>
                     
