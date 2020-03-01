@@ -26,7 +26,7 @@
     <div class="main_content">
         <div class="header">
        
-        <h1>Accreditor</h1>
+        <h1>Bhouse Owner</h1>
         </div>  
         <div class="info">
           
@@ -56,19 +56,20 @@
 
 <div id="modal">
     <div class="addbutton">
-    <button type="button"  v-on:click="modal1 = true" class="btn btn-primary">Add Accreditors</button>
+    <button type="button"  v-on:click="modal1 = true" class="btn btn-primary">Add Bhouse Owner</button>
     </div>
 <div v-if="modal1">
 <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                   <h5 class="modal-title">Add Accreditors</h5>
+                   <h5 class="modal-title">Add Bhouse Owner</h5>
                   <button class="close" type="button" @Click="close = true">
                   <span aria-hidden="true"> &times</span>
                   </button>
                 </div>
                     <div class="modal-body p-4">
-                        <form action="saveaccreditor.php" method="POST">
+                        <form action="savebhouseowner.php" method="POST">
+                        
                             <div class="form-group">
                              <input type="text" name="fname" class="form-control form-control-lg" 
                              placeholder="Firstname">
@@ -84,22 +85,32 @@
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="school" class="form-control form-control-lg" 
-                                placeholder="School">
+                                <input type="text" name="age" class="form-control form-control-lg" 
+                                placeholder="Age">
                             </div>
                            
                             <div class="form-group">
+                                <input type="text" name="gender" class="form-control form-control-lg" 
+                                placeholder="gender">
+                            </div>
+
+                            <div class="form-group">
                                 <input type="text" name="username" class="form-control form-control-lg" 
-                                placeholder="Username">
+                                placeholder="username">
                             </div>
 
                             <div class="form-group">
                                 <input type="text" name="password" class="form-control form-control-lg" 
                                 placeholder="Password">
                             </div>
+
+                            <div class="form-group">
+                                <input type="text" name="number" class="form-control form-control-lg" 
+                                placeholder="number">
+                            </div>
                             
                             <div class="form-group">
-                                <button class="btn btn-info btn-block btn-lg">Add Accreditors</button>
+                                <button class="btn btn-info btn-block btn-lg">Add Bhouse Owner</button>
                             </div>
         
                         </form>

@@ -1,13 +1,13 @@
 <?php
 
 
-
+session_start();
 include '../include/conn.php';
 
 
-
-    $query = "SELECT * FROM boardinghouse";
-
+    $id = $_SESSION['id'];
+    
+    $query = "SELECT C.* FROM `boardinghouse` C JOIN boardinghouseowner B ON bhouse_id = c.bhouse_id where c.bhouse_id = '".$id ."' and b.id = '".$id ."'";
 
     $result = mysqli_query($conn,$query);
 
