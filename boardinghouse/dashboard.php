@@ -28,7 +28,7 @@ session_start();
             <li><a href="accreditors.php"><i class="fas fa-project-diagram"></i>&nbsp;Apply accreditation</a></li>
             <li><a href="bhouse.php"><i class="fas fa-blog"></i>Boarding House</a></li>
             <li><a href="report.php"><i class="fas fa-address-book"></i>Report</a></li>
-            <li><a href="logout"><i class="fas fa-map-pin"></i>Logout</a></li>
+            <li><a href="logout.php"><i class="fas fa-map-pin"></i>Logout</a></li>
         </ul> 
        
     </div>

@@ -101,7 +101,9 @@
     
     <div class="row">
     
-    <?php include 'getbhouse.php' ;?>
+      <?php include 'getbhouse.php' ;?>
+    
+    
     </div>
     
     <!-- /.row -->

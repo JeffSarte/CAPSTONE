@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" href="Index.php">Home</a>
+            <a class="nav-link" href="dashboard.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About Us</a>
