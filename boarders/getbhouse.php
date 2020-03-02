@@ -2,7 +2,7 @@
 
 
 
-include 'include/conn.php';
+include '../include/conn.php';
 
 
 

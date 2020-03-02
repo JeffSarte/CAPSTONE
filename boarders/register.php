@@ -17,36 +17,25 @@
         <h3 class="text-center text-white pt-5">Login form</h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
+                <div id="login-column" class="col-md-7">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="login.php" method="post">
+                        <form id="login-form" class="form" action="saveboarders.php" method="post">
                             <h3 class="text-center text-info">Register</h3>
-
-                            <div class="form-group">
-                            <input type="text" name="fname" class="form-control form-control-lg" placeholder="FirstName">
-                            </div>
-
-
-                            <div class="form-group">
-                            <input type="text" name="mname" class="form-control form-control-lg" placeholder="MiddleName">
-                            </div>
-
-                            <div class="form-group">
-                            <input type="text" name="lname" class="form-control form-control-lg" placeholder="LastName">
-                            </div>
-
-                            <div class="form-group">
-                            <input type="text" name="lname" class="form-control form-control-lg" placeholder="LastName">
-                            </div>
                             
-                            <div class="form-group">
-                                <label for="username" class="text-info">Username:</label><br>
-                                <input type="text" name="username" id="username" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="text-info">Password:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
-                            </div>
+                            
+                            <input type="text" name="fname" class=" " placeholder="FirstName">
+                            <input type="text" name="mname" class=" " placeholder="MiddleName">
+                            <input type="text" name="lname" class=" " placeholder="LastName">
+                            <input type="text" name="age" class="form-control " placeholder="Age">
+                            <input type="text" name="school" class=" form-control" placeholder="School">
+                            <input type="text" name="status" class=" form-control" placeholder="Status">
+                            <input type="text" name="gender" class="form-control " placeholder="Gender">
+                            <input type="text" name="number" class="form-control " placeholder="Mobile Number">
+                            <input type="text" name="email" class="form-control " placeholder="Email">
+                             <input type="text" name="username" class=" form-control" placeholder="UserName">
+                             <input type="text" name="password" class=" form-control" placeholder="Password">
+
+
                             <div class="form-group">
                                 
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">

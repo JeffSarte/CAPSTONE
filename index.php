@@ -33,13 +33,13 @@
             <a class="nav-link" href="Index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.php">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="boardinghouses.html">Boarding Houses</a>
+            <a class="nav-link" href="boardinghouses.php">Boarding Houses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.php">Contact</a>
           </li>    
           <li class="nav-item ">
             <a class="nav-link" href="boarders">Log In</a>
@@ -62,15 +62,12 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('images/background1.png')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>First Slide</h3>
-            <p>This is a description for the first slide.</p>
-          </div>
+            
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Second Slide</h3>
-            <p>This is a description for the second slide.</p>
+            
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
@@ -80,8 +77,6 @@
 
   <!-- Page Content -->
   <div class="container">
-
-    <h1 class="my-4">Welcome to Modern Business</h1>
 
     <!-- Marketing Icons Section -->
     <div class="row">
@@ -102,20 +97,22 @@
     <!-- /.row -->
 
     <!-- Portfolio Section -->
-    <h2>Portfolio Heading</h2>
-
+    <h2>Boarding House</h2>
+    
     <div class="row">
-      
+    
     <?php include 'getbhouse.php' ;?>
     </div>
+    
     <!-- /.row -->
 
     <hr>
 
     <!-- Call to Action Section -->
-    <div class="row mb-4">
-      <div class="col-md-8">
-        
+    <div class="row mb-8">
+      <div class="col-md-10">
+      
+    </div>
       </div>
     </div>
 
@@ -124,10 +121,7 @@
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
+    
   </footer>
 
 

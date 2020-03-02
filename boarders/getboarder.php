@@ -11,8 +11,8 @@
             <tbody>
                 <tr>
                 
-                    <td><?php echo $row['FirstName']; ?>.' '.<?php echo $row['MiddleName']; ?>.'
-                     '. <?php echo $row['LastName']; ?></td> 
+                    <td><?php echo $row['FirstName']; ?>.' '.<?php echo $row['MiddleName']; ?></td>
+                     <td> <?php echo $row['LastName']; ?></td> 
                     <td><?php echo $row['Age']; ?></td>
                     <td><?php echo $row['School']; ?></td> 
                     <td><?php echo $row['Status']; ?></td>

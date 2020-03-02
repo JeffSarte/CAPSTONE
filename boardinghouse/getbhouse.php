@@ -1,7 +1,7 @@
 <?php
 
 
-session_start();
+
 include '../include/conn.php';
 
 
@@ -19,8 +19,9 @@ include '../include/conn.php';
                 <tr>
                 
                     <td><?php echo $row['Name']; ?></td> 
-                    <td><?php echo $row['Description']; ?></td>
-                    
+                    <td><?php echo $row['Address']; ?></td>
+                    <td><?php echo $row['Number']; ?></td>
+                    <td><?php echo $row['Rent']; ?></td>
                     <td>
 
                     <form action="delbhouse.php" method="POST">

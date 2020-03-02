@@ -1,17 +1,24 @@
 <?php
 
     include '../include/conn.php';
+
+
+           session_start(); 
+
     $msg = "";
     $name = $_POST['name'];
-    
-   
-    $description = $_POST['description'];
-
+    $address = $_POST['address'];
+    $number = $_POST['number'];
+    $rent = $_POST['rent'];
+    $bhouse_id = $_SESSION['id'];
     $target = "bhouseimage/".basename($_FILES['image']['name']);
     $image  = $_FILES['image']['name'];
-    echo $image ;
-    
-    $query ="INSERT into boardinghouse (Name , Description,image) values ('$name', '$description','$image');";
+
+
+    echo $bhouse_id;
+ 
+
+    $query ="INSERT into boardinghouse (Name , Address,Number, Rent , bhouse_id ,image) values ('$name', '$address','$number','$rent','$bhouse_id','$image');";
 
     mysqli_query($conn,$query);
 
@@ -27,6 +34,6 @@
         $msg = "not";
         echo $msg;
     }
-   header('location:bhouse.php');
+    header('location:bhouse.php');
     
 ?>

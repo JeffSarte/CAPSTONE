@@ -9,11 +9,14 @@
     $age = $_POST['age'];
     $school = $_POST['school'];
     $status = $_POST['status'];
+  
     $username = $_POST['username'];
     $password = $_POST['password'];
+
     $gender = $_POST['gender'];
     $number = $_POST['number'];
     $email = $_POST['email'];
+   
 
     
 
@@ -25,7 +28,7 @@
        mysqli_query($conn,$query);
  
 
-  //  header ('location:index.php');
+    header ('location:index.php');
 
 
 ?>

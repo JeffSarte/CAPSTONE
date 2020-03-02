@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +16,15 @@
 
 <div class="wrapper">
     <div class="sidebar">
-        <h2>Owner</h2>
+    <h2>Welcome <?php echo $_SESSION["UserName"]; ?></h2>
         <ul>
             <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Dashboard</a></li>
             <li><a href="profile.php"><i class="fas fa-user"></i>&nbsp;Profile</a></li>
             <li><a href="boarders.php"><i class="fas fa-address-card"></i>&nbsp;Boarders</a></li>
             <li><a href="accreditors.php"><i class="fas fa-project-diagram"></i>&nbsp;Apply accreditation</a></li>
-            <li><a href="bhouse.php"><i class="fas fa-blog"></i>Bhouse</a></li>
+            <li><a href="bhouse.php"><i class="fas fa-blog"></i>Boarding House</a></li>
             <li><a href="report.php"><i class="fas fa-address-book"></i>Report</a></li>
-            <li><a href="#"><i class="fas fa-map-pin"></i>Logout</a></li>
+            <li><a href="logout.php"><i class="fas fa-map-pin"></i>Logout</a></li>
         </ul> 
        
     </div>
@@ -38,7 +43,9 @@
     
         <tr>     
         <th scope="col">Name</th>
-        <th scope="col">Description</th>
+        <th scope="col">Address</th>
+        <th scope="col">Number</th>
+        <th scope="col">Rent</th>
         <th scope="col">Action</th>        
         </tr>
     <?php  include 'getbhouse.php';?>
@@ -75,13 +82,26 @@
                             </div>
 
                             <div class="form-group">
-                             <input type="file" name="image" class="form-control form-control-lg" 
-                             placeholder="Name">
+                             <input type="text" name="address" class="form-control form-control-lg" 
+                             placeholder="Address">
+                            </div>
+
+                            <div class="form-group">
+                             <input type="text" name="number" class="form-control form-control-lg" 
+                             placeholder="Mobile Number">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="description" class="form-control form-control-lg" 
-                                placeholder="Description">
+                                <input type="text" name="rent" class="form-control form-control-lg" 
+                                placeholder="Rent">
                             </div>
+
+                            
+
+                            <div class="form-group">
+                                <input type="file" name="image" class="form-control form-control-lg" 
+                                placeholder="Image">
+                            </div>
+                           
                            
                             
                             <div class="form-group">
