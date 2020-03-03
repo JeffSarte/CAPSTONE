@@ -29,7 +29,7 @@ include 'include/conn.php';
             </h4>
             <p class="card-text">Address : <?php echo $row['Address']; ?></p>
             <p class="card-text">Rent : <?php echo $row['Rent']; ?></p>
-            <button>View Details</button>
+            <a href="details.php?id=<?php echo $row['id']; ?> " >View Details</a>
           </div>
 
 
