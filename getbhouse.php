@@ -17,8 +17,10 @@ include 'include/conn.php';
      
       
         ?>
-        <div class="col-lg-4 col-sm-10 portfolio-item">
-        <div class="card h-200">
+
+        
+        <div class="col-lg-3  portfolio-item ">
+        <div class="card h-500">
 
         
         <?php echo "<img   src='../boardinghouse/bhouseimage/".$row['image']."'>"; ?>

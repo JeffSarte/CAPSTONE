@@ -20,6 +20,7 @@ session_start();
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+  
 
 </head>
 
@@ -80,54 +81,23 @@ session_start();
     </div>
   </header>
 
-  <!-- Page Content -->
-  <div class="container">
-
-    <!-- Marketing Icons Section -->
-    <div class="row">
-      
-    
-
-      
-
-     
-      
-      
-    </div>
-
-    
 
 
-  
-    <!-- /.row -->
-
-    <!-- Portfolio Section -->
-    <h2>Boarding House</h2>
-    
+ 
+  <br>
+    <h2 style="text-align: center;">Boarding House In Naga City</h2>
+    <br>
     <div class="row">
     
       <?php include 'getbhouse.php' ;?>
     
-    
-    </div>
-    
-    <!-- /.row -->
+</div>
 
-    <hr>
 
-    <!-- Call to Action Section -->
-    <div class="row mb-8">
-      <div class="col-md-10">
-      
-    </div>
-      </div>
-    </div>
 
-  </div>
-  <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-3 bg-dark">
     
   </footer>
 

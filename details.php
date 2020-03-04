@@ -123,7 +123,7 @@ session_start();
               </div>
 
               </div>
-
+        
 
         <div v-if="name">
               <div class="card" style="width: 50rem;">
