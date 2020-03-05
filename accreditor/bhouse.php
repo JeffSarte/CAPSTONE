@@ -32,7 +32,7 @@ session_start();
     <div class="main_content">
         <div class="header">
 
-       <h1> List Of  Boarding House in Naga City </h1>
+       <h1> Boarding House in Naga City </h1>
        
         </div>  
         <div class="info">

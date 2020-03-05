@@ -30,7 +30,31 @@
        
     </div>
 
+    <div class="main_content">
+         
+        <div class="info">
+          <div class="bhouse">
+          
 
-    
+    <div class="card" style="width: 15rem;">
+            <div class="card-body">
+                <h5 class="card-title">Accredited Boarding House</h5>
+
+                <?php 
+                
+                    include '../include/conn.php';
+
+                    $result=mysqli_query($conn,"Select * from accreditor ");
+                    $totalboarder = mysqli_num_rows($result);
+
+                    ?>
+
+            <h5 class="card-title"><?php echo $totalboarder; ?></h5>
+            </div>
+            </div>  
+            </div> 
+            </div> 
+            </div> 
+
 </body>
 </html>

@@ -24,11 +24,7 @@ include '../include/conn.php';
                     
                     <td>
 
-                    <form action="getbhouse.php" method="POST">
-                    
-                                        <button type="submit" class="btn btn-danger" name="id" value="<?php echo $row['id']; ?>" >View Details </button>
-                                    </form>
-                     </td>
+                    <a href="details.php?id=<?php echo $row['id'];?>"> View Details</a>
                 </tr>
             </tbody>
             
