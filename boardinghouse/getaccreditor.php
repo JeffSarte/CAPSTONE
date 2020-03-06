@@ -23,10 +23,10 @@
                     
                     <td>
 
-                    <form action="#" method="POST">
                     
-                                        <button type="submit" class="btn btn-danger" name="id" value="<?php echo $row['id']; ?>" >Apply </button>
-                                    </form>
+                        <a href="apply.php?id=<?php echo $row['id']; ?>">Apply</a>
+                                       
+                                   
                     
                 </tr>
             </tbody>

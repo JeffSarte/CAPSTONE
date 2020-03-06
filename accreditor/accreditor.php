@@ -41,13 +41,13 @@
     <thead class="thead-dark">
     
         <tr>     
-        <th scope="col">BoardingHouse</th>
-        <th scope="col">Address</th>  
-        <th scope="col">Number</th>  
+        <th scope="col">Boarding House Name</th>
+        <th scope="col">bhouse</th>  
+        <th scope="col">Remarks</th>  
         <th scope="col">Action</th>  
               
         </tr>
-    <?php  include 'getbhouse.php';?>
+    <?php  include 'getaccredited.php';?>
     </thead>
     </table>
     </div>

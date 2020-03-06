@@ -10,7 +10,7 @@
     echo $bhouse;
      echo $accredited;
 
-    $query  = "INSERT into  accreditedbhouse (accreditor_id ,bhouse_id ,status) values ('$accreditor','$bhouse','$accreditor');";
+    $query  = "INSERT into  accreditedbhouse (accreditor_id ,bhouse_id ,status) values ('$accreditor','$bhouse','$accredited');";
 
     mysqli_query ($conn,$query);
 

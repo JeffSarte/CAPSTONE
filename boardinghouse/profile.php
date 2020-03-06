@@ -1,4 +1,7 @@
-<?php session_start();?>
+<?php
+session_start();
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +11,7 @@
     <link rel="stylesheet" href="/css/boardinghouse.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css" >
 </head>
 <body>
 
@@ -32,16 +36,90 @@
        <h1>Profile</h1>
         </div>  
         <div class="info">
+    <div class="listbhouse">
+        
+        
+    <?php
+
+
+$ids = $_SESSION['id'];
+include '../include/conn.php';
+
+
+$query = "SELECT * from boardinghouseowner where id='$ids'" ;
+
+$result = mysqli_query($conn,$query);
+
+
+while($row = mysqli_fetch_array($result))
+{
     
+?>  
+    <table border="1" class="table table-bordered mg-b-0">
+                                                <tr>
+        <th>Name</th>
+        <td><?php  echo $row['FirstName'].'  '.  $row['MiddleName'].''. $row['LastName'];?></td>
+    </tr>
+    
+
+    <tr>
+        <th>Age</th>
+        <td><?php  echo $row['Age'];?></td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td><?php  echo $row['Gender'];?></td>
+    </tr>
+
+    <tr>
+    <th>Number</th>
+        <td><?php  echo $row['Number'];?></td>
+        
+    </tr>
+
+    <tr>
+    <th>UserName</th>
+        <td><?php  echo $row['UserName'];?></td>
+        
+    </tr>
+
+
+    <tr>
+    <th>Password</th>
+        <td><?php  echo $row['Password'];?></td>
+        
+    </tr>
+    
+    </table>    
+
+    <form action="savebhouse.php" method="post">
+       
+    <input type="hidden" name="save" value="<?php echo $row['id'];?>" >
+    <input type="hidden" name="saves" value="<?php echo $id = $_SESSION['id'];?>" >
+    
+    <button type="submit" class="btn btn-primary">Update</button>
+    </form> 
+   
+   
+<?php
+
+
+
+}
+
+
+?>
+
 
 </div>
 
 
+            
         </div>
     </div>
 </div>
 
 
-    
+    <script src="../js/bhouse.js"></script>
 </body>
 </html>

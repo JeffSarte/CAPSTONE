@@ -35,29 +35,68 @@ session_start();
         </div>  
         <div class="info">
     <div class="listbhouse">
-        
-        
-        <table class="table">   
-    <thead class="thead-dark">
-    
-    <tr>     
-        <th scope="col">School</th>
-        <th scope="col">Email</th>
-        <th scope="col">Number</th>
-        <th scope="col">UserName</th>       
-        <th scope="col">Password</th>   
-        <th scope="col">Action</th>       
-        </tr>
-        <?php  include 'getaccreditor.php';?>
-    </thead>
-    </table>
 
-    </tr>
-  </thead>
-  
-  
-</table>  
+    <?php
 
+
+include '../include/conn.php';
+
+
+$id = $_GET['id'];
+
+
+
+
+$query = "SELECT *  from accreditor where id = '$id'" ;
+
+$result = mysqli_query($conn,$query);
+
+
+while($row = mysqli_fetch_array($result))
+{
+
+?>  
+<table border="1" class="table table-bordered mg-b-0">
+                                            <tr>
+    <th>School</th>
+    <td><?php  echo $row['School'];?></td>
+</tr>
+
+
+<tr>
+    <th>Email</th>
+    <td><?php  echo $row['email'];?></td>
+</tr>
+<tr>
+    <th>Number</th>
+    <td><?php  echo $row['number'];?></td>
+</tr>
+<tr>    
+
+<form action="saveaccreditation.php" method="post">
+
+<th>Date</th>
+<td><input type="date" name="date"></td>
+
+</tr>
+
+</table>    
+
+   
+<input type="hidden" name="save" value="<?php echo $row['id'];?>" >
+<input type="hidden" name="saves" value="<?php echo $id = $_SESSION['id'];?>" >
+
+<button type="submit" class="btn btn-primary">Apply</button>
+</form> 
+
+
+<?php
+
+}
+
+?>
+
+       
 </div>
 
         </div>

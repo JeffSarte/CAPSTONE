@@ -31,7 +31,7 @@ session_start();
 
     <div class="header">
        
-       <h1>Boarding House</h1>
+       <h1>Boarders</h1>
         </div>  
         <div class="info">
     <div class="listbhouse">

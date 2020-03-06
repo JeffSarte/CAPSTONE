@@ -81,9 +81,11 @@ session_start();
 
       while($row = mysqli_fetch_array($result))
       {
-      
+        
         
           ?>
+          <br>
+          <br>
           <div class="col-lg-10  ">
           <div class="card h-300">
 
@@ -98,7 +100,7 @@ session_start();
               <p class="card-text">Rent : <?php echo $row['Rent']; ?></p>
 
           <div id="details">
-              <button @Click ="rent=true, detail=false ,name=false">Rent</button>
+              <button @Click ="rent=true ,detail=false ,name=false">Rent</button>
               <button @Click="detail=true ,rent=false ,name=false"> Details</button>
               <button @Click="name=true, rent=false , detail=false">Name</button>
 
@@ -106,7 +108,12 @@ session_start();
               <div class="card" style="width: 50rem;">
                 <div class="card-body">
                 <p class="card-text">Rent : <?php echo $row['Rent']; ?></p>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas</p>
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  
                   
                 </div>
               </div>
@@ -117,8 +124,11 @@ session_start();
               <div class="card" style="width: 50rem;">
                 <div class="card-body">
                 <p class="card-text">Address : <?php echo $row['Address']; ?></p>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  
+                <p class="card-text">ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas</p>
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
                 </div>
               </div>
 
@@ -128,9 +138,12 @@ session_start();
         <div v-if="name">
               <div class="card" style="width: 50rem;">
                 <div class="card-body">
-                <p class="card-text">Address : <?php echo $row['Name']; ?></p>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  
+                <p class="card-text">Name : <?php echo $row['Name']; ?></p>
+                <p class="card-text">ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas</p>
+                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
                 </div>
               </div>
             </div>
