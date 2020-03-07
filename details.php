@@ -124,8 +124,7 @@ session_start();
               <div class="card" style="width: 50rem;">
                 <div class="card-body">
                 <p class="card-text">Address : <?php echo $row['Address']; ?></p>
-                <p class="card-text">ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
-                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                <p class="card-text">hahshahshadhasdhsasdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
                   ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
                   ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas</p>
                   ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
@@ -139,9 +138,7 @@ session_start();
               <div class="card" style="width: 50rem;">
                 <div class="card-body">
                 <p class="card-text">Name : <?php echo $row['Name']; ?></p>
-                <p class="card-text">ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
-                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
-                  ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
+                <p class="card-text">
                   ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas</p>
                   ahsdasdasahsdasdasahsdasdasahsdasdasahsdasdas
                 </div>
