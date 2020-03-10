@@ -4,10 +4,11 @@
 
 include '../include/conn.php';
 
+        $id = $_SESSION['id'];
+            
+        $query = "SELECT C.* FROM `accreditation` C JOIN accreditor B ON accreditor_id = c.accreditor_id where c.accreditor_id = '".$id ."' and b.id = '".$id ."'";
 
-
-    $query = "SELECT * FROM accreditedbhouse  ";
-
+    
 
     $result = mysqli_query($conn,$query);
 

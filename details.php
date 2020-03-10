@@ -176,9 +176,9 @@ session_start();
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-3 bg-dark">
     
-  </footer>
+    </footer>
 
 
 </body>

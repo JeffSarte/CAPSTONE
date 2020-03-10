@@ -15,10 +15,8 @@ session_start();
 
   <title>Istaran Boarding House MANAGEMENT</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
   
 
@@ -27,7 +25,7 @@ session_start();
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
     <div class="container">
       <a class="navbar-brand" href="index.php">ISTARAN</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

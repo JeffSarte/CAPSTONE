@@ -1,21 +1,42 @@
 <?php
 
         include '../include/conn.php';
-
+    
+    
     $accreditor = $_POST['saves'];
-    $bhouse = $_POST['save'];
+    $accreditation = $_POST['save'];
     $accredited = $_POST['accredited'];
+    $owner  = $_POST['owner'];
+    $date = $_POST['date'];
+
+    
+
+    echo $owner;
 
     echo $accreditor;
-    echo $bhouse;
-     echo $accredited;
 
-    $query  = "INSERT into  accreditedbhouse (accreditor_id ,bhouse_id ,status) values ('$accreditor','$bhouse','$accredited');";
-
-    mysqli_query ($conn,$query);
+    echo $accreditation;
+  
+    echo $accredited;
 
 
-    header('location:dashboard.php');
+    echo $date;
+
+    
+
+    $query = "UPDATE `accreditation` SET  bhouse_id = '$owner' , accreditor_id = '$accreditor' , date = '$date' , status = '$accredited' WHERE id = $accreditation";
+
+
+    $result =     mysqli_query($conn, $query);
+
+    if ($result)
+    {
+        echo 'data updated';
+    } else {
+        echo 'Not updated';
+    }
+    
+   header('location:dashboard.php');
 
 
 

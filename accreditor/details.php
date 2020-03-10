@@ -21,7 +21,7 @@ session_start();
     <div class="sidebar">
     <h2>Welcome <?php echo $_SESSION["UserName"]; ?></h2>
         <ul>
-        <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+        <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Dashboard</a></li>
            
             <li><a href="accreditor.php"><i class="fas fa-project-diagram"></i>&nbsp;Accredited Bhouse</a></li>
             <li><a href="bhouse.php"><i class="fas fa-blog"></i>Boarding House</a></li>
@@ -47,8 +47,9 @@ session_start();
                 $ids = $_GET['id'];
                 include '../include/conn.php';
 
+               
 
-                $query = "SELECT * from boardinghouse where id='$ids'" ;
+                $query = "SELECT * from accreditation where id='$ids' " ;
 
                 $result = mysqli_query($conn,$query);
 
@@ -59,18 +60,17 @@ session_start();
                 ?>  
                     <table border="1" class="table table-bordered mg-b-0">
                                                                 <tr>
-                        <th>Boardgin House </th>
-                        <td><?php  echo $row['Name'];?></td>
+                        <th>Date</th>
+                        <td><?php  echo $row['date'];?></td>
                     </tr>
+
                     
 
                     <tr>
-                        <th>Mobile Number</th>
-                        <td><?php  echo $row['Number'];?></td>
+                        
                     </tr>
                     <tr>
-                        <th>Address</th>
-                        <td><?php  echo $row['Address'];?></td>
+                    
                     </tr>
 
                     <tr>
@@ -79,17 +79,19 @@ session_start();
                     </tr>
                     
                     </table>    
-
+                    
                     <form action="savebhouse.php" method="post">
                        
-                    <input type="hidden" name="save" value="<?php echo $row['id'];?>" >
+                    <input type="hidden" name="save" value="<?php echo $ids = $_GET['id'];;?>" >
                     <input type="hidden" name="saves" value="<?php echo $id = $_SESSION['id'];?>" >
+                    <input type="hidden" name="owner" value="<?php echo $row['bhouse_id'];?>" >
+                    <input type="hidden" name="date" value="<?php echo $row['date'];?>" >
                     <th>Status</th>
                         <td><select name="accredited" id="">
                             <option value="0"></option>
                             <option value="1">Accredited</option>   
                             <option value="2">Not Accredited</option>
-                        </select></td>
+                        </select></td>  
                     <button type="submit" class="btn btn-primary">Save</button>
                     </form> 
                    

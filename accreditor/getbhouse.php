@@ -6,7 +6,7 @@ include '../include/conn.php';
 
 
 
-    $query = "SELECT * FROM boardinghouse";
+    $query = "SELECT * FROM boardinghouse order by Name asc";
 
 
     $result = mysqli_query($conn,$query);
@@ -15,21 +15,30 @@ include '../include/conn.php';
     while($row = mysqli_fetch_array($result))
     {
         ?>
-            <tbody>
-                <tr>
-                
-                    <td><?php echo $row['Name']; ?></td> 
-                    <td><?php echo $row['Address']; ?></td>
-                    <td><?php echo $row['Number']; ?></td>
-                    
-                    <td>
+                   
+                <div class="col-lg-3  portfolio-item ">
+                <div class="card h-500" style="width: 24rem";>
+                <?php echo "<img   src='../boardinghouse/bhouseimage/".$row['image']."'>"; ?>
+                <div class="card-body">
+                    <h4 class="card-title">
+                    <a href="#"> <?php echo $row['Name']; ?> </a> 
+                    </h4>
+                    <p class="card-text">Address : <?php echo $row['Address']; ?></p>
+                   
+                    <a href="viewdetails.php?id=<?php echo $row['Number']; ?> " >View Details</a>
+                </div>
 
-                    <a href="details.php?id=<?php echo $row['id'];?>"> View Details</a>
-                </tr>
-            </tbody>
+
+  
+</div>
+</div>
+        
             
         <?php     
 }
 
 
 ?>
+
+
+

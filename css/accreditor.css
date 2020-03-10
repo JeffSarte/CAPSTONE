@@ -50,7 +50,7 @@
   }
   
   .wrapper .sidebar ul li:hover{
-    background-color: #594f8d;
+    background-color: #ffffff;
   }
       
   .wrapper .sidebar ul li:hover a{
@@ -108,9 +108,10 @@
   .listbhouse{
     
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 80px;
     margin-right:200px;
-    background-color: rgb(204, 194, 148);
+    background-color: rgb(255, 255, 255);
+    
   }
 
   .header{
@@ -130,3 +131,13 @@
     
 
   }
+
+  .name{
+  
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right:200px;
+    background-color: rgb(255, 255, 255);
+    
+  }
+

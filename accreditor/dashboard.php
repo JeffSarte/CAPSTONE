@@ -20,7 +20,7 @@
     <div class="sidebar">
     <h2>Welcome <?php echo $_SESSION["UserName"]; ?></h2>
         <ul>
-        <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+        <li><a href="dashboard.php"><i class="fas fa-home"></i>&nbsp;Dashboard</a></li>
             
             <li><a href="accreditor.php"><i class="fas fa-project-diagram"></i>&nbsp;Accredited Bhouse</a></li>
             <li><a href="bhouse.php"><i class="fas fa-blog"></i>Boarding House</a></li>
@@ -44,7 +44,7 @@
                 
                     include '../include/conn.php';
 
-                    $result=mysqli_query($conn,"Select * from accreditor ");
+                    $result=mysqli_query($conn,"Select * from boardinghouse ");
                     $totalboarder = mysqli_num_rows($result);
 
                     ?>
