@@ -3,9 +3,20 @@
 
         include '../include/conn.php';
 
-       
+        session_start();
 
-    $id = $_POST['saves'];
+                
+       $ownerid =   $_SESSION['id'];
+       $query = "SELECT * FROM boardinghouse WHERE bhouse_id = '$ownerid' ";
+
+        $result = mysqli_query($conn,$query);
+      
+        
+        while($row = mysqli_fetch_array($result))
+        {
+               $id = $row['id'] ;
+        }
+ 
     $ids = $_POST['save'];
     $date = $_POST['date'];
             
@@ -18,5 +29,5 @@
     mysqli_query($conn,$query);
 
 
-    //header('location:accreditors.php');
+   header('location:accreditors.php');
 ?>

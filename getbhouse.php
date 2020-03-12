@@ -31,6 +31,7 @@ include 'include/conn.php';
             </h4>
             <p class="card-text">Address : <?php echo $row['Address']; ?></p>
             <p class="card-text">Rent : <?php echo $row['Rent']; ?></p>
+            <p class="card-text">Avaialble Room 10</p>
             <a href="details.php?id=<?php echo $row['id']; ?> " >View Details</a>
           </div>
 

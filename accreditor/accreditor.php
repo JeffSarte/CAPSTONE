@@ -42,7 +42,7 @@
     
         <tr>     
         <th scope="col">Boarding House Name</th>
-        <th scope="col">bhouse</th>  
+        <th scope="col">Address</th>
         <th scope="col">Remarks</th>  
         <th scope="col">Action</th>  
               

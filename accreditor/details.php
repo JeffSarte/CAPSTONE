@@ -48,7 +48,7 @@ session_start();
                 include '../include/conn.php';
 
                
-
+               
                 $query = "SELECT * from accreditation where id='$ids' " ;
 
                 $result = mysqli_query($conn,$query);
@@ -64,7 +64,8 @@ session_start();
                         <td><?php  echo $row['date'];?></td>
                     </tr>
 
-                    
+                    <th>Owner</th>
+                        <td><?php  echo $row['date'];?></td>
 
                     <tr>
                         
@@ -88,9 +89,8 @@ session_start();
                     <input type="hidden" name="date" value="<?php echo $row['date'];?>" >
                     <th>Status</th>
                         <td><select name="accredited" id="">
-                            <option value="0"></option>
-                            <option value="1">Accredited</option>   
-                            <option value="2">Not Accredited</option>
+                            <option value="1"> Not Accredited</option>   
+                            <option value="2"> Accredited</option>
                         </select></td>  
                     <button type="submit" class="btn btn-primary">Save</button>
                     </form> 
