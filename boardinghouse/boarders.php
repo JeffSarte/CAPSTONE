@@ -52,7 +52,7 @@ session_start();
         <th scope="col">Email</th>   
         <th scope="col">Action</th>       
         </tr>
-    <?php  include '../admin/getboarder.php';?>
+    <?php  include 'getreservation.php';?>
     </thead>
     </table>
 

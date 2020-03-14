@@ -30,9 +30,7 @@ include '../include/conn.php';
                     <td><?php echo $row['Name']; ?></td>
 
                     <td><?php echo $row['Address']; ?></td>
-
-
-                    
+ 
                     <td>
                     
                     <?php 
